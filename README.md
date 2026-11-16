@@ -20,6 +20,16 @@
 - [Licencia](#-licencia)
 
 ---
+👥 Integrantes del equipo
+
+Integrantes
+
+Alex San Martin Ormeño [Líder / Coordinador]
+
+Johannata Salas [Diseño UI/UX]
+
+Felipe Vivanco [Frontend / Maquetación]
+---
 
 ## ✨ Características
 
