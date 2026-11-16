@@ -67,6 +67,23 @@
             max-width: 680px;
         }
 
+        /* IMAGENES DE LA PORTADA */
+
+        .imagenes-portada {
+            display: flex;
+            gap: 15px;
+            margin-top: 28px;
+        }
+
+        .imagenes-portada img {
+            width: calc(33.333% - 10px);
+            height: 145px;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 5px;
+            display: block;
+        }
+
         .etiqueta {
             color: #f5b820;
             font-weight: bold;
@@ -152,7 +169,174 @@
             color: #666;
             line-height: 1.6;
         }
+        
+        /* HISTORIA Y FUNDADOR */
+        .nosotros {
+            background: #fff;
+            padding: 70px 8%;
+        }
 
+        .nosotros-contenido {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .nosotros-encabezado {
+            text-align: center;
+            margin-bottom: 38px;
+        }
+
+        .nosotros-encabezado .subtitulo {
+            color: #b78300;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        .nosotros-encabezado h2 {
+            font-size: 32px;
+            color: #151a20;
+            margin-bottom: 12px;
+        }
+
+        .nosotros-encabezado p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .fundador {
+            display: grid;
+            grid-template-columns: minmax(230px, 0.85fr) 1.4fr;
+            gap: 38px;
+            align-items: center;
+        }
+
+        .fundador-imagen {
+            text-align: center;
+        }
+
+        .fundador-foto {
+            width: 100%;
+            max-height: 390px;
+            object-fit: contain;
+            object-position: center top;
+            background: #f1f1f1;
+            border-bottom: 5px solid #f5b820;
+            border-radius: 5px;
+        }
+
+        .fundador-imagen h3 {
+            color: #151a20;
+            font-size: 27px;
+            margin: 14px 0 5px;
+        }
+
+        .fundador-cargo {
+            display: inline-block;
+            color: #9a7000;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .fundador-texto p {
+            color: #555;
+            line-height: 1.85;
+            margin-bottom: 16px;
+        }
+
+        .fundador-cita {
+            border-left: 4px solid #f5b820;
+            padding: 15px 20px;
+            margin-top: 20px;
+            background: #f7f7f7;
+            color: #333;
+            font-style: italic;
+            line-height: 1.7;
+        }
+
+
+        /* EQUIPO DE TRABAJO */
+        .equipo-trabajo {
+            background-color: #151a20;
+            color: white;
+            text-align: center;
+            padding: 55px 8%;
+        }
+
+        .equipo-trabajo .titulo h2 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .equipo-trabajo .titulo p {
+            color: #e2e2e2;
+            line-height: 1.7;
+        }
+
+        .equipo-intro {
+            max-width: 760px;
+            margin: 0 auto 28px;
+            color: #e2e2e2;
+            line-height: 1.8;
+        }
+
+        .equipo-grid {
+            max-width: 900px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .equipo-card {
+            background: #252d36;
+            border-top: 4px solid #f5b820;
+            border-radius: 5px;
+            padding: 25px 20px;
+        }
+
+        .equipo-card h3 {
+            color: #f5b820;
+            margin-bottom: 12px;
+            font-size: 18px;
+        }
+
+        .equipo-card p {
+            color: #f1f1f1;
+            font-size: 14px;
+            line-height: 1.65;
+        }
+
+        /* MAQUINARIA Y CAMIONES */
+        .maquinaria { background: #f4f4f4; }
+
+        .maquinaria-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .maquinaria-card {
+            background: white;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 3px 12px rgba(0,0,0,.10);
+        }
+
+        .maquinaria-card img {
+            display: block;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .maquinaria-info { padding: 20px; border-top: 4px solid #f5b820; }
+        .maquinaria-info h3 { margin-bottom: 9px; color: #151a20; }
+        .maquinaria-info p { color: #666; line-height: 1.6; font-size: 14px; }
+        
         /* FORMULARIO DE ARRIENDO */
 
         .arriendo {
@@ -215,6 +399,33 @@
             .portada h1 {
                 font-size: 32px;
             }
+            
+            .imagenes-portada {
+                gap: 8px;
+            }
+
+            .imagenes-portada img {
+                height: 95px;
+            }
+
+            .maquinaria-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .equipo-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .fundador {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .fundador-foto {
+                max-height: 340px;
+            }
+
+            .maquinaria-card img { height: 200px; }
 
             .formulario-arriendo {
                 grid-template-columns: 1fr;
@@ -237,9 +448,11 @@
         </a>
 
         <nav>
-            <a href="#inicio">Inicio</a>
+           <a href="#inicio">Inicio</a>
             <a href="#nosotros">Nosotros</a>
+            <a href="#equipo">Equipo</a>
             <a href="#servicios">Servicios</a>
+            <a href="#maquinaria">Maquinaria</a>
             <a href="#arriendo">Arriendo de grúas</a>
         </nav>
     </header>
@@ -251,10 +464,6 @@
         <div class="portada" id="inicio">
 
             <div class="contenido">
-
-                <img src="https://gruasbohme.cl/wp-content/uploads/2021/07/image4.jpeg">
-                <img src="https://live.staticflickr.com/2806/13392609874_462d58da78_b.jpg">
-                <img src="https://live.staticflickr.com/65535/52537210975_8e52f656e2_b.jpg">
 
                 <div class="etiqueta">
                     IZAJE Y TRANSPORTE INDUSTRIAL
@@ -274,27 +483,83 @@
                     CONOCER SERVICIOS
                 </a>
 
+                <div class="imagenes-portada">
+                    <img src="https://gruasbohme.cl/wp-content/uploads/2021/07/image4.jpeg"
+                         alt="Grúa realizando trabajos de izaje">
+
+                    <img src="https://live.staticflickr.com/2806/13392609874_462d58da78_b.jpg"
+                         alt="Grúa en operación">
+
+                    <img src="https://live.staticflickr.com/65535/52537210975_8e52f656e2_b.jpg"
+                         alt="Equipo de grúa">
+                </div>
+
             </div>
 
         </div>
 
-        <!-- NOSOTROS -->
-
+         <!-- QUIENES SOMOS Y FUNDADOR -->
         <section class="nosotros" id="nosotros">
+            <div class="nosotros-contenido">
+                <div class="nosotros-encabezado">
+                    <div class="subtitulo">Quiénes somos</div>
+                    <h2>Más de 30 años de excelencia</h2>
+                    <p>Experiencia, compromiso e innovación al servicio de grandes proyectos.</p>
+                </div>
 
+                <div class="fundador">
+                    <div class="fundador-imagen">
+                        <img class="fundador-foto"
+                             src="https://gruasbohme.cl/bohme/wp-content/uploads/2024/12/image4_preview_rev_1.png"
+                             alt="Luciano Böhme, fundador de Grúas Böhme">
+                        <h3>Luciano Böhme</h3>
+                        <span class="fundador-cargo">Fundador y visionario</span>
+                    </div>
+
+                    <div class="fundador-texto">
+                        <p><strong>Desde nuestros inicios, hemos sido un referente en la región del Biobío, llevando soluciones especializadas en izaje y transporte de cargas sobredimensionadas.</strong></p>
+
+                        <p>Fundada por Don Luciano Böhme, nuestra empresa combina un legado familiar de compromiso y honestidad con innovación tecnológica, garantizando seguridad y precisión en cada operación.</p>
+
+                        <p>Cada proyecto que emprendemos refleja nuestra dedicación, profesionalismo y pasión por superar los desafíos más exigentes.</p>
+
+                        <div class="fundador-cita">
+                            “Levantar una carga es más que una operación; es asumir una responsabilidad con quienes confían en nosotros.”
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EQUIPO DE TRABAJO -->
+        <section class="equipo-trabajo" id="equipo">
             <div class="titulo">
-                <h2>¿Quiénes somos?</h2>
-                <p>Experiencia y compromiso en cada operación.</p>
+                <h2>Nuestro equipo de trabajo</h2>
+                <p>Personas que hacen posible cada operación.</p>
             </div>
 
-            <p>
-                Grúas Böhme es una empresa especializada en
-                servicios de izaje y transporte de cargas pesadas.
-                Esta página busca presentar sus servicios y facilitar
-                las solicitudes de arriendo.
+            <p class="equipo-intro">
+                Detrás de cada servicio hay coordinación y trabajo en equipo. Las tareas de planificación,
+                operación y apoyo permiten organizar los trabajos de izaje y transporte de acuerdo con las
+                necesidades de cada proyecto.
             </p>
 
+            <div class="equipo-grid">
+                <article class="equipo-card">
+                    <h3>Dirección y coordinación</h3>
+                    <p>Organización de los servicios y coordinación de los requerimientos de cada cliente.</p>
+                </article>
+                <article class="equipo-card">
+                    <h3>Operaciones</h3>
+                    <p>Personal encargado de desarrollar las labores de izaje y movimiento de cargas.</p>
+                </article>
+                <article class="equipo-card">
+                    <h3>Apoyo técnico</h3>
+                    <p>Apoyo en la preparación y desarrollo de los trabajos en terreno.</p>
+                </article>
+            </div>
         </section>
+
 
         <!-- SERVICIOS -->
 
@@ -327,6 +592,37 @@
 
         </section>
 
+        <!-- MAQUINARIA Y CAMIONES -->
+        <section class="maquinaria" id="maquinaria">
+            <div class="titulo">
+                <h2>Maquinaria y equipos</h2>
+                <p>Conoce parte de los equipos que se muestran en nuestras imágenes.</p>
+            </div>
+            <div class="maquinaria-grid">
+                <article class="maquinaria-card">
+                    <img src="https://gruasbohme.cl/wp-content/uploads/2021/07/image4.jpeg" alt="Camión y equipo de grúa">
+                    <div class="maquinaria-info">
+                        <h3>Equipos de izaje</h3>
+                        <p>Maquinaria destinada a apoyar trabajos de elevación y posicionamiento de cargas.</p>
+                    </div>
+                </article>
+                <article class="maquinaria-card">
+                    <img src="https://live.staticflickr.com/2806/13392609874_462d58da78_b.jpg" alt="Camión de trabajo industrial">
+                    <div class="maquinaria-info">
+                        <h3>Camiones de trabajo</h3>
+                        <p>Vehículos utilizados en operaciones y labores de transporte especializado.</p>
+                    </div>
+                </article>
+                <article class="maquinaria-card">
+                    <img src="https://live.staticflickr.com/65535/52537210975_8e52f656e2_b.jpg" alt="Maquinaria pesada de la empresa">
+                    <div class="maquinaria-info">
+                        <h3>Maquinaria especializada</h3>
+                        <p>Equipos de apoyo para responder a distintos requerimientos de proyectos industriales.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
         <!-- FORMULARIO DE ARRIENDO -->
 
         <section class="arriendo" id="arriendo">
