@@ -6,6 +6,7 @@
 
 ![Estado del proyecto] Avanzando...
 ![Licencia](?).
+El jefe/creador de la empresa es: Luciano Böhme.
 
 ---
 
@@ -26,7 +27,7 @@ Integrantes
 
 Alex San Martin Ormeño [Líder / Coordinador]
 
-Johannata Salas [Diseño UI/UX]
+Jonathan Salas [Diseño UI/UX]
 
 Felipe Vivanco [Frontend / Maquetación]
 
